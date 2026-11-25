@@ -9,33 +9,62 @@
 /* Begin PBXBuildFile section */
 		41A1AC8F33617117D94D6AD7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFB91634F4A0FA58386D1B /* WebKit.framework */; };
 		44EE9D3A7E1173C71B07C0DA /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762A386470D81CA426FD3638 /* AuthenticationServices.framework */; };
+		75A0B5D81EA9D7E39C4EB3E9 /* MrNanGuoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A0B2255FAE96CBE47E016F /* MrNanGuoSDK.framework */; };
 		78ED8732F652C6CE33A553F3 /* MNGSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96519ED1AC645ADE47491678 /* MNGSessionService.swift */; };
 		81BE23E067543856CEE23D8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3003493EDF134D262D354085 /* UIKit.framework */; };
 		83A9179C5282E4E925D43EB4 /* Pods_MrNanGuoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7266E38BF09AF4CE1D46C565 /* Pods_MrNanGuoSDK.framework */; };
 		92023A5CB7790FA7E32F9042 /* MNGPlatformExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A9064ADB9B77E1F0D1C150 /* MNGPlatformExtensions.swift */; };
+		9B2F014B1FD82FF9BEFB8AB5 /* LoginConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C7B0BF43302D980C18D150 /* LoginConfigurationTests.swift */; };
+		B3F89EE7933A072E51C92EA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A44D12613E1D971EF90381 /* Foundation.framework */; };
 		C191FA159538728CD673E1F0 /* MNGEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E0A79F2A8EC7D6A1CDCCC6 /* MNGEntryViewController.swift */; };
 		DBE54A0E2647D6F5A944D2F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A847DF9346CC56E544735F /* Security.framework */; };
 		EA56890E236D6C3872DFC7AE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F113F63A00E4A0E309DB2AE /* CoreLocation.framework */; };
 		F0C378BB77D853037F332D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A44D12613E1D971EF90381 /* Foundation.framework */; };
+		F23E8E84110CAC4DDE0FB322 /* Pods_MrNanGuoSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DD12B5B8208939BE12D730 /* Pods_MrNanGuoSDKTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		915EE83F1ECD30C17F7FEA96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A89F84C120D5C75B5208CDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F14ADE837C93E603A85902;
+			remoteInfo = MrNanGuoSDK;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03A847DF9346CC56E544735F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		0AFFB91634F4A0FA58386D1B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		15E0A79F2A8EC7D6A1CDCCC6 /* MNGEntryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MNGEntryViewController.swift; sourceTree = "<group>"; };
+		29DD12B5B8208939BE12D730 /* Pods_MrNanGuoSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrNanGuoSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3003493EDF134D262D354085 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7266E38BF09AF4CE1D46C565 /* Pods_MrNanGuoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MrNanGuoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C7B0BF43302D980C18D150 /* LoginConfigurationTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurationTests.swift; sourceTree = "<group>"; };
 		762A386470D81CA426FD3638 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/AuthenticationServices.framework; sourceTree = DEVELOPER_DIR; };
+		7A7428CBE09727C96C3E409F /* Pods-MrNanGuoSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrNanGuoSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-MrNanGuoSDKTests/Pods-MrNanGuoSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83A0B2255FAE96CBE47E016F /* MrNanGuoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MrNanGuoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96519ED1AC645ADE47491678 /* MNGSessionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MNGSessionService.swift; sourceTree = "<group>"; };
 		99B20C962FF1AAAFCB05B774 /* Pods-MrNanGuoSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrNanGuoSDK.debug.xcconfig"; path = "Target Support Files/Pods-MrNanGuoSDK/Pods-MrNanGuoSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		9F113F63A00E4A0E309DB2AE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		A706A1BB700618A9CF61680B /* MrNanGuoSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrNanGuoSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A44D12613E1D971EF90381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E9A9064ADB9B77E1F0D1C150 /* MNGPlatformExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MNGPlatformExtensions.swift; sourceTree = "<group>"; };
+		EC15A753F4F47525F6B856DA /* Pods-MrNanGuoSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrNanGuoSDKTests.release.xcconfig"; path = "Target Support Files/Pods-MrNanGuoSDKTests/Pods-MrNanGuoSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		FB62AA7DF3C1A183BB069249 /* Pods-MrNanGuoSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MrNanGuoSDK.release.xcconfig"; path = "Target Support Files/Pods-MrNanGuoSDK/Pods-MrNanGuoSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9C092E2D3E9E30977E10CC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F89EE7933A072E51C92EA4 /* Foundation.framework in Frameworks */,
+				75A0B5D81EA9D7E39C4EB3E9 /* MrNanGuoSDK.framework in Frameworks */,
+				F23E8E84110CAC4DDE0FB322 /* Pods_MrNanGuoSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE89BDD79402A18A646DEE75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,7 +89,17 @@
 				774DAC4C2B2A92FA29C5B71D /* Frameworks */,
 				58AB553E3C690EF409255B47 /* Sources */,
 				88FA7281257E4CF217EBBDBC /* Pods */,
+				3DB7D69CAC2990FF872C1475 /* Tests */,
 			);
+			sourceTree = "<group>";
+		};
+		3DB7D69CAC2990FF872C1475 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				73C7B0BF43302D980C18D150 /* LoginConfigurationTests.swift */,
+			);
+			name = Tests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		450DA333A0E09D9EC8A0AF12 /* iOS */ = {
@@ -91,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				83A0B2255FAE96CBE47E016F /* MrNanGuoSDK.framework */,
+				A706A1BB700618A9CF61680B /* MrNanGuoSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +140,7 @@
 			children = (
 				450DA333A0E09D9EC8A0AF12 /* iOS */,
 				7266E38BF09AF4CE1D46C565 /* Pods_MrNanGuoSDK.framework */,
+				29DD12B5B8208939BE12D730 /* Pods_MrNanGuoSDKTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +150,8 @@
 			children = (
 				FB62AA7DF3C1A183BB069249 /* Pods-MrNanGuoSDK.release.xcconfig */,
 				99B20C962FF1AAAFCB05B774 /* Pods-MrNanGuoSDK.debug.xcconfig */,
+				EC15A753F4F47525F6B856DA /* Pods-MrNanGuoSDKTests.release.xcconfig */,
+				7A7428CBE09727C96C3E409F /* Pods-MrNanGuoSDKTests.debug.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -127,6 +170,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4EBEFC7A7B81AA34C3DB6A0B /* MrNanGuoSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F1EF353FA853727BF6275B /* Build configuration list for PBXNativeTarget "MrNanGuoSDKTests" */;
+			buildPhases = (
+				13CB8BADF6DFCD33BBE7B6AD /* [CP] Check Pods Manifest.lock */,
+				E8F7365DE9386DCB98F6B355 /* Sources */,
+				9C092E2D3E9E30977E10CC61 /* Frameworks */,
+				FAFF3895CA853AA01CB1DB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB728099DA2A40247994C532 /* PBXTargetDependency */,
+			);
+			name = MrNanGuoSDKTests;
+			productName = MrNanGuoSDKTests;
+			productReference = A706A1BB700618A9CF61680B /* MrNanGuoSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		54F14ADE837C93E603A85902 /* MrNanGuoSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD32590F5270934B4CD64753 /* Build configuration list for PBXNativeTarget "MrNanGuoSDK" */;
@@ -172,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				54F14ADE837C93E603A85902 /* MrNanGuoSDK */,
+				4EBEFC7A7B81AA34C3DB6A0B /* MrNanGuoSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,9 +247,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAFF3895CA853AA01CB1DB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13CB8BADF6DFCD33BBE7B6AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MrNanGuoSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5D5329E1E97CF0FC6CFF6499 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,7 +332,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8F7365DE9386DCB98F6B355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2F014B1FD82FF9BEFB8AB5 /* LoginConfigurationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB728099DA2A40247994C532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MrNanGuoSDK;
+			target = 54F14ADE837C93E603A85902 /* MrNanGuoSDK */;
+			targetProxy = 915EE83F1ECD30C17F7FEA96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		019E78217189AB0CB12EC494 /* Release */ = {
@@ -362,6 +471,37 @@
 			};
 			name = Debug;
 		};
+		A4F5102DA0A192701D706527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC15A753F4F47525F6B856DA /* Pods-MrNanGuoSDKTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrnanguo.sdk.tests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE425C137C8839A477D98316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7428CBE09727C96C3E409F /* Pods-MrNanGuoSDKTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrnanguo.sdk.tests;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
 		F6042EAD4A715D118B74C736 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27F1EF353FA853727BF6275B /* Build configuration list for PBXNativeTarget "MrNanGuoSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F5102DA0A192701D706527 /* Release */,
+				AE425C137C8839A477D98316 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C6D13775737C2E5AA61DDFF /* Build configuration list for PBXProject "MrNanGuoSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

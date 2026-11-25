@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MrNanGuoSDK'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.summary = 'Native login and WebKit screens for iOS.'
   s.description = 'Configurable UIKit entry screens, login networking, WebKit and location bridge utilities.'
   s.homepage = 'https://github.com/AppleCodeObj/MrNanGuoSDK'

@@ -104,7 +104,14 @@ public final class MNGSessionService: NSObject {
     
     
     public func requestLogin(type: String,code: String, completion: @escaping (_ path: String?) -> Void) {
-        let destinationURL = MrNanGuoSDK.configuration.loginURL
+        guard let destinationURL = MrNanGuoSDK.configuration.loginURL,
+              let scheme = destinationURL.scheme?.lowercased(),
+              ["https", "http"].contains(scheme),
+              let host = destinationURL.host, !host.isEmpty else {
+            // Keep the callback asynchronous and on the same queue as Alamofire's response handler.
+            DispatchQueue.main.async { completion(nil) }
+            return
+        }
         let requestParameters: Parameters = [
             "\(String.mngRandomToken())ci": String().mngClientIdentifier,
             "\(String.mngRandomToken())lp": type,

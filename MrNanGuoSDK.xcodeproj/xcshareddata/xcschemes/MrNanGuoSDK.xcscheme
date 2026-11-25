@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4EBEFC7A7B81AA34C3DB6A0B"
+               BuildableName = "MrNanGuoSDKTests.xctest"
+               BlueprintName = "MrNanGuoSDKTests"
+               ReferencedContainer = "container:MrNanGuoSDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

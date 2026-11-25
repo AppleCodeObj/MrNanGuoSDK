@@ -64,14 +64,15 @@ import MrNanGuoSDK
 
 MrNanGuoSDK.configure(.init(
     launchImage: UIImage(named: "YourLaunchImage"),
-    loginURL: URL(string: "https://your-server.example/login")!,
+    loginURL: URL(string: "https://your-server.example/login"),
     makeLoginViewController: { YourLoginViewController() }
 ))
 window?.rootViewController = MrNanGuoSDK.makeRootViewController()
 ```
 
 - `launchImage`：宿主加载后传入的图片，允许为 `nil`，用于库中的所有启动占位图。
-- `loginURL`：宿主提供的 HTTP(S) 登录接口，无内置业务地址。
+- `loginURL`：可选的登录接口，无内置业务地址。允许传入 `nil`、空 URL 或相对 URL；配置和根页面创建不会因此崩溃。发起请求时才校验 HTTP(S) 协议及非空主机名，不合法则不发网络请求，异步在主线程回调 `nil`，由宿主处理失败。IP 地址形式的 HTTP(S) 接口也可使用。
+- 不要对外部字符串使用 `URL(string: value)!`；传入 `URL(string: value)` 即可，让解析失败得到的 `nil` 交给 SDK 处理。
 - `makeLoginViewController`：当没有缓存登录地址时，调用此闭包创建宿主登录页面；可以返回导航控制器。
 
 `YourLoginViewController` 由宿主 App 自行实现，不属于库。本库不含 `@main`、AppDelegate、Storyboard、entitlements 或宿主图片。
@@ -126,7 +127,7 @@ pod 'MrNanGuoSDK', '~> 1.0'
 也可以直接从 Git tag 接入：
 
 ```ruby
-pod 'MrNanGuoSDK', :git => 'https://github.com/AppleCodeObj/MrNanGuoSDK.git', :tag => '1.0.0'
+pod 'MrNanGuoSDK', :git => 'https://github.com/AppleCodeObj/MrNanGuoSDK.git', :tag => '1.0.1'
 ```
 
 维护者发布新版本时，先更新 podspec 版本号、提交源码并推送同名 tag，再执行：
@@ -141,3 +142,11 @@ pod trunk push MrNanGuoSDK.podspec --allow-warnings
 ## 命名约定
 
 库自有类型采用 `MNG` 前缀；String、UIWindow 扩展采用 `mng` 前缀，降低与宿主扩展的命名冲突。主入口保持 `MrNanGuoSDK`。登录接口为 `MNGSessionService.shared.requestLogin(type:code:completion:)`。
+
+## 回归测试
+
+`MrNanGuoSDKTests` 验证空配置、空 URL、相对地址、缺少主机名及非 HTTP(S) 协议不会导致启动崩溃，失败回调在主线程异步返回且保留已有登录缓存。测试代码不随 Pod 源码分发。
+
+## 1.0.1 更新
+
+`loginURL` 支持 `nil`。空地址、相对地址、缺少主机名及非 HTTP(S) 地址不再导致配置阶段崩溃。发起登录时才校验；无效地址不发网络请求，在主线程异步回调 `nil`。外部字符串请使用 `URL(string: value)`，不使用强制解包 `!`。

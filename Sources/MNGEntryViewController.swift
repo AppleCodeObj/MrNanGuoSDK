@@ -6,10 +6,11 @@ import Alamofire
 public enum MrNanGuoSDK {
     public struct Configuration {
         public let launchImage: UIImage?
-        public let loginURL: URL
+        /// Optional endpoint. Invalid or absent endpoints fail the login request without trapping.
+        public let loginURL: URL?
         public let makeLoginViewController: () -> UIViewController
 
-        public init(launchImage: UIImage?, loginURL: URL,
+        public init(launchImage: UIImage?, loginURL: URL? = nil,
                     makeLoginViewController: @escaping () -> UIViewController) {
             self.launchImage = launchImage
             self.loginURL = loginURL
@@ -27,8 +28,6 @@ public enum MrNanGuoSDK {
 
     public static func configure(_ configuration: Configuration) {
         precondition(Thread.isMainThread, "Configure MrNanGuoSDK on the main thread.")
-        precondition(["https", "http"].contains(configuration.loginURL.scheme?.lowercased() ?? "")
-                     && configuration.loginURL.host != nil, "loginURL must be an HTTP(S) URL.")
         storedConfiguration = configuration
     }
 
